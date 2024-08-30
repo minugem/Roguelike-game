@@ -11,56 +11,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f740f936dfb7431caa01b9ba09a1ed4, type: 3}
   m_Name: Tile_06
-  m_EditorClassIdentifier:
-  Prefab: {fileID: 3505332922480245300, guid: efa9d7fa203034c90b447bfcd47b0381, type: 3}
-  Up:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: d94ff7c2712684ff8aaee7f9ea668aa4, type: 2}
-  Down:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: 7deb1277a836845a694e9ed60227c7b0, type: 2}
-    - {fileID: 11400000, guid: 0d3c7dff61fae4183bd471b012fc4dc5, type: 2}
-  Left:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: d94ff7c2712684ff8aaee7f9ea668aa4, type: 2}
-  Right:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: 7deb1277a836845a694e9ed60227c7b0, type: 2}
-    - {fileID: 11400000, guid: 0d3c7dff61fae4183bd471b012fc4dc5, type: 2}
-    - {fileID: 11400000, guid: d94ff7c2712684ff8aaee7f9ea668aa4, type: 2}
-  Prefab: {fileID: 3505332922480245300, guid: efa9d7fa203034c90b447bfcd47b0381, type: 3}
-  Up:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: d94ff7c2712684ff8aaee7f9ea668aa4, type: 2}
-  Down:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: 7deb1277a836845a694e9ed60227c7b0, type: 2}
-    - {fileID: 11400000, guid: 0d3c7dff61fae4183bd471b012fc4dc5, type: 2}
-  Left:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: d94ff7c2712684ff8aaee7f9ea668aa4, type: 2}
-  Right:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: 7deb1277a836845a694e9ed60227c7b0, type: 2}
-    - {fileID: 11400000, guid: 0d3c7dff61fae4183bd471b012fc4dc5, type: 2}
-    - {fileID: 11400000, guid: d94ff7c2712684ff8aaee7f9ea668aa4, type: 2}
-  Prefab: {fileID: 3505332922480245300, guid: efa9d7fa203034c90b447bfcd47b0381, type: 3}
-  Up:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: d94ff7c2712684ff8aaee7f9ea668aa4, type: 2}
-  Down:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: 7deb1277a836845a694e9ed60227c7b0, type: 2}
-    - {fileID: 11400000, guid: 0d3c7dff61fae4183bd471b012fc4dc5, type: 2}
-  Left:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: d94ff7c2712684ff8aaee7f9ea668aa4, type: 2}
-  Right:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: 7deb1277a836845a694e9ed60227c7b0, type: 2}
-    - {fileID: 11400000, guid: 0d3c7dff61fae4183bd471b012fc4dc5, type: 2}
-    - {fileID: 11400000, guid: d94ff7c2712684ff8aaee7f9ea668aa4, type: 2}
-  Prefab: {fileID: 3505332922480245300, guid: efa9d7fa203034c90b447bfcd47b0381, type: 3}
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 3505332922480245300, guid: efca1957db7514b4bac323327fa2f205, type: 3}
   Up:
     CompatibleNodes:
     - {fileID: 11400000, guid: d94ff7c2712684ff8aaee7f9ea668aa4, type: 2}

@@ -11,48 +11,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f740f936dfb7431caa01b9ba09a1ed4, type: 3}
   m_Name: Tile_22
-  m_EditorClassIdentifier:
-  Prefab: {fileID: 3505332922480245300, guid: 7fc330e1bc24447878b8d01ea12b854e, type: 3}
-  Up:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: 2ec76b305fff54ab5aba152f65833fa5, type: 2}
-    - {fileID: 11400000, guid: 522dcd47a96fb47a59b394ce0de435d5, type: 2}
-    - {fileID: 11400000, guid: b49d605084737474796e8ce8bd217612, type: 2}
-    - {fileID: 11400000, guid: a315a2666b5ef4924b68ed3a830496b9, type: 2}
-    - {fileID: 11400000, guid: dc6295cfc87644497857df7e210081ba, type: 2}
-    - {fileID: 11400000, guid: f91123f8abdf9411db5fcd793964c25e, type: 2}
-    - {fileID: 11400000, guid: 11688ef663ad84f918d92e5045bcf112, type: 2}
-    - {fileID: 11400000, guid: c8b03d1474ea748159874efc31f51639, type: 2}
-    - {fileID: 11400000, guid: 70edcd31c6026484c857efc9a183945b, type: 2}
-    - {fileID: 11400000, guid: 72ddf9887599a4da9a62064f21a767b3, type: 2}
-    - {fileID: 11400000, guid: 435e5033e875c457c9657f30c2158369, type: 2}
-    - {fileID: 11400000, guid: b1f7fa17569194120bb409807da6a1b7, type: 2}
-    - {fileID: 11400000, guid: a168de975ed47420ea504e45383f21f7, type: 2}
-    - {fileID: 11400000, guid: 8ab7564783eae4ac491c337aef4ae50c, type: 2}
-  Down:
-    CompatibleNodes:
-  Left:
-    CompatibleNodes:
-  Right:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: 2ec76b305fff54ab5aba152f65833fa5, type: 2}
-    - {fileID: 11400000, guid: 522dcd47a96fb47a59b394ce0de435d5, type: 2}
-    - {fileID: 11400000, guid: b49d605084737474796e8ce8bd217612, type: 2}
-    - {fileID: 11400000, guid: a315a2666b5ef4924b68ed3a830496b9, type: 2}
-    - {fileID: 11400000, guid: ecd7ab221cda440dd866e1a2bed6885f, type: 2}
-    - {fileID: 11400000, guid: 49a54ac04cb8f46cbbf821593a869591, type: 2}
-    - {fileID: 11400000, guid: f34c5611a722c424e84c8f47273fce34, type: 2}
-    - {fileID: 11400000, guid: dc6295cfc87644497857df7e210081ba, type: 2}
-    - {fileID: 11400000, guid: f91123f8abdf9411db5fcd793964c25e, type: 2}
-    - {fileID: 11400000, guid: 11688ef663ad84f918d92e5045bcf112, type: 2}
-    - {fileID: 11400000, guid: c8b03d1474ea748159874efc31f51639, type: 2}
-    - {fileID: 11400000, guid: 70edcd31c6026484c857efc9a183945b, type: 2}
-    - {fileID: 11400000, guid: 72ddf9887599a4da9a62064f21a767b3, type: 2}
-    - {fileID: 11400000, guid: 435e5033e875c457c9657f30c2158369, type: 2}
-    - {fileID: 11400000, guid: b1f7fa17569194120bb409807da6a1b7, type: 2}
-    - {fileID: 11400000, guid: a168de975ed47420ea504e45383f21f7, type: 2}
-    - {fileID: 11400000, guid: 8ab7564783eae4ac491c337aef4ae50c, type: 2}
-  Prefab: {fileID: 3505332922480245300, guid: 7fc330e1bc24447878b8d01ea12b854e, type: 3}
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 3505332922480245300, guid: 4b86439e32a0044a4afc726dc10cb305, type: 3}
   Up:
     CompatibleNodes:
     - {fileID: 11400000, guid: 2ec76b305fff54ab5aba152f65833fa5, type: 2}

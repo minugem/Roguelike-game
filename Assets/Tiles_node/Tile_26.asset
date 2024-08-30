@@ -11,65 +11,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f740f936dfb7431caa01b9ba09a1ed4, type: 3}
   m_Name: Tile_26
-  m_EditorClassIdentifier:
-  Prefab: {fileID: 3505332922480245300, guid: c0851d9081a644b7c83323ee9e0e3eb4, type: 3}
-  Up:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: 56f31f2c37a0048cea3d045903d9d71f, type: 2}
-    - {fileID: 11400000, guid: b9ea4baaa2b8c4ad1a799e222d35b333, type: 2}
-    - {fileID: 11400000, guid: 2ec76b305fff54ab5aba152f65833fa5, type: 2}
-    - {fileID: 11400000, guid: 88b9dc896f3184274976ca0369dba553, type: 2}
-    - {fileID: 11400000, guid: a94a331f34e0d44cf97d09fd1e76a5fb, type: 2}
-    - {fileID: 11400000, guid: 2648ea738cfb344118220813b276736d, type: 2}
-    - {fileID: 11400000, guid: 522dcd47a96fb47a59b394ce0de435d5, type: 2}
-    - {fileID: 11400000, guid: ca71aad2a88114863a121ba529c19633, type: 2}
-    - {fileID: 11400000, guid: b49d605084737474796e8ce8bd217612, type: 2}
-    - {fileID: 11400000, guid: 22674e0c270d846d69fa36786e2883ff, type: 2}
-    - {fileID: 11400000, guid: a315a2666b5ef4924b68ed3a830496b9, type: 2}
-    - {fileID: 11400000, guid: e78a0ff87b56a4b7881050ded00c8f55, type: 2}
-    - {fileID: 11400000, guid: 37e8089018aaf4d6da8daf3d12885d84, type: 2}
-    - {fileID: 11400000, guid: 11688ef663ad84f918d92e5045bcf112, type: 2}
-    - {fileID: 11400000, guid: 70edcd31c6026484c857efc9a183945b, type: 2}
-    - {fileID: 11400000, guid: 72ddf9887599a4da9a62064f21a767b3, type: 2}
-    - {fileID: 11400000, guid: 435e5033e875c457c9657f30c2158369, type: 2}
-    - {fileID: 11400000, guid: 8ab7564783eae4ac491c337aef4ae50c, type: 2}
-  Down:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: b9ea4baaa2b8c4ad1a799e222d35b333, type: 2}
-    - {fileID: 11400000, guid: 2ec76b305fff54ab5aba152f65833fa5, type: 2}
-    - {fileID: 11400000, guid: 88b9dc896f3184274976ca0369dba553, type: 2}
-    - {fileID: 11400000, guid: ef6dd3a8c4c8e4f31b6c9379e416e3fc, type: 2}
-  Left:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: ef6dd3a8c4c8e4f31b6c9379e416e3fc, type: 2}
-  Right:
-    CompatibleNodes:
-    - {fileID: 11400000, guid: 546c1b324409947138477992044ae900, type: 2}
-    - {fileID: 11400000, guid: 676cdb32c9bfb45008ee233aca44326a, type: 2}
-    - {fileID: 11400000, guid: 6c8fd749e14f047deae86d949c38a3c3, type: 2}
-    - {fileID: 11400000, guid: 56f31f2c37a0048cea3d045903d9d71f, type: 2}
-    - {fileID: 11400000, guid: b9ea4baaa2b8c4ad1a799e222d35b333, type: 2}
-    - {fileID: 11400000, guid: 2ec76b305fff54ab5aba152f65833fa5, type: 2}
-    - {fileID: 11400000, guid: 88b9dc896f3184274976ca0369dba553, type: 2}
-    - {fileID: 11400000, guid: ef6dd3a8c4c8e4f31b6c9379e416e3fc, type: 2}
-    - {fileID: 11400000, guid: a94a331f34e0d44cf97d09fd1e76a5fb, type: 2}
-    - {fileID: 11400000, guid: 2648ea738cfb344118220813b276736d, type: 2}
-    - {fileID: 11400000, guid: 522dcd47a96fb47a59b394ce0de435d5, type: 2}
-    - {fileID: 11400000, guid: ca71aad2a88114863a121ba529c19633, type: 2}
-    - {fileID: 11400000, guid: b49d605084737474796e8ce8bd217612, type: 2}
-    - {fileID: 11400000, guid: 7937cd29f36154b3e82ace3a3be600eb, type: 2}
-    - {fileID: 11400000, guid: 749479de6fd794d4f92118efbb90737e, type: 2}
-    - {fileID: 11400000, guid: 22674e0c270d846d69fa36786e2883ff, type: 2}
-    - {fileID: 11400000, guid: a315a2666b5ef4924b68ed3a830496b9, type: 2}
-    - {fileID: 11400000, guid: e78a0ff87b56a4b7881050ded00c8f55, type: 2}
-    - {fileID: 11400000, guid: 37e8089018aaf4d6da8daf3d12885d84, type: 2}
-    - {fileID: 11400000, guid: 11688ef663ad84f918d92e5045bcf112, type: 2}
-    - {fileID: 11400000, guid: 70edcd31c6026484c857efc9a183945b, type: 2}
-    - {fileID: 11400000, guid: 72ddf9887599a4da9a62064f21a767b3, type: 2}
-    - {fileID: 11400000, guid: 435e5033e875c457c9657f30c2158369, type: 2}
-    - {fileID: 11400000, guid: 8ab7564783eae4ac491c337aef4ae50c, type: 2}
-    - {fileID: 11400000, guid: f92a18fe1c4e140ef888b171c4c34dc4, type: 2}
-  Prefab: {fileID: 3505332922480245300, guid: c0851d9081a644b7c83323ee9e0e3eb4, type: 3}
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 3505332922480245300, guid: 741da7800f7da4f9e8c4e75b98fa95e6, type: 3}
   Up:
     CompatibleNodes:
     - {fileID: 11400000, guid: 56f31f2c37a0048cea3d045903d9d71f, type: 2}

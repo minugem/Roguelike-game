@@ -11,8 +11,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f740f936dfb7431caa01b9ba09a1ed4, type: 3}
   m_Name: Tile_41
-  m_EditorClassIdentifier:
-  Prefab: {fileID: 3505332922480245300, guid: 3edeb0e16ff4843a493fc759d642ecc1, type: 3}
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 3505332922480245300, guid: 8e9990f830e0c4d43ac09d6587529b3a, type: 3}
   Up:
     CompatibleNodes:
   Down:
