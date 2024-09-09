@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class Menu : MonoBehaviour
 {
-    public void StartGame()
+    public void StartNewGame()
     {
-        Debug.Log("Game started!");
+        Debug.Log("New Game started!");
         // SceneManager.LoadScene("Game");
     }
 
     public void QuitGame()
     {
         Debug.Log("Game quit!");
-        Application.Quit();
+        // Application.Quit();
+    }
+
+    public void Options()
+    {
+        Debug.Log("Options!");
+    }
+
+    public void LoadGame()
+    {
+        Debug.Log("Game loaded!");
+        // SceneManager.LoadScene("Game");
     }
 }
