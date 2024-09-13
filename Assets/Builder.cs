@@ -8,7 +8,7 @@ public class Builder : MonoBehaviour
 
     private Node[,] Grid;
 
-    public List<Node> Nodes = new();
+    public List<Node> AllNodes = new();
 
     private List<Vector2Int> ToCollapse = new();
 
@@ -36,7 +36,7 @@ public class Builder : MonoBehaviour
             int x = ToCollapse[0].x;
             int y = ToCollapse[0].y;
 
-            List<Node> nodes = new(Nodes);
+            List<Node> nodes = new(AllNodes);
 
             for (int i = 0; i < Offsets.Length; i++)
             {
@@ -72,12 +72,12 @@ public class Builder : MonoBehaviour
 
             if (nodes.Count < 1)
             {
-                Grid[x, y] = Nodes[0];
+                Grid[x, y] = AllNodes[Random.Range(0, AllNodes.Count)];
                 Debug.LogWarning("Fail on " + x + ", " + y);
             }
             else
             {
-                Grid[x, y] = Nodes[Random.Range(0, nodes.Count)];
+                Grid[x, y] = nodes[Random.Range(0, nodes.Count)];
             }
 
             Instantiate(Grid[x, y].Prefab, new Vector3(x, y, 0), Quaternion.identity);
