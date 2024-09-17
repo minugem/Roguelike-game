@@ -1,19 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 public class Menu : MonoBehaviour
 {
     public void StartNewGame()
     {
         Debug.Log("New Game started!");
-        // SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Main");
     }
 
     public void QuitGame()
     {
         Debug.Log("Game quit!");
-        // Application.Quit();
+        Application.Quit();
     }
 
     public void Options()
@@ -24,6 +25,6 @@ public class Menu : MonoBehaviour
     public void LoadGame()
     {
         Debug.Log("Game loaded!");
-        // SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Main");
     }
 }
