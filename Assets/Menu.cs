@@ -5,26 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    //When The StartNewGame function is called it loads the Main Scene
     public void StartNewGame()
     {
-        Debug.Log("New Game started!");
         SceneManager.LoadScene("Main");
     }
 
+    //When The QuitGame function is called it quits the game
     public void QuitGame()
     {
-        Debug.Log("Game quit!");
         Application.Quit();
     }
 
+    //When The Options function is called it will display an options menu (to be added)
     public void Options()
     {
         Debug.Log("Options!");
     }
 
+    //When The LoadGame function is called it loads the Main Scene
     public void LoadGame()
     {
-        Debug.Log("Game loaded!");
         SceneManager.LoadScene("Main");
     }
 }
