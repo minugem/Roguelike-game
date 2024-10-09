@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Player : Character
 {
+    [Header("Health")]
+    public int maxHealth = 100;
+    public int currentHealth;
+    public HealthBar healthBar;
+
     [Header("Melee Attack")]
     public float meleeAttackDamage;
     public Vector2 attackSize = new Vector2(1f, 1f);
@@ -15,6 +20,14 @@ public class Player : Character
     private Vector2 AttackAreaPos;
     private SpriteRenderer spriteRenderer;
 
+    private void Start()
+    {
+        currentHealth = maxHealth;
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(maxHealth);
+        }
+    }
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -28,9 +41,9 @@ public class Player : Character
         AttackAreaPos.x += offsetX;
         AttackAreaPos.y += offsetY;
 
-        Collider2D[] hitColliders = Physics2D.OverlapBoxAll(AttackAreaPos,attackSize, 0f,enemyLayer);
+        Collider2D[] hitColliders = Physics2D.OverlapBoxAll(AttackAreaPos, attackSize, 0f, enemyLayer);
 
-        foreach (Collider2D hitCollider in hitColliders) 
+        foreach (Collider2D hitCollider in hitColliders)
         {
             hitCollider.GetComponent<Character>().TakeDamage(meleeAttackDamage * isAttack);
             hitCollider.GetComponent<EnemyController>().Knockback(transform.position);
