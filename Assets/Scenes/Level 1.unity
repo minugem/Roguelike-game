@@ -23682,7 +23682,7 @@ GameObject:
   - component: {fileID: 1485380179}
   - component: {fileID: 1485380178}
   - component: {fileID: 1485380177}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24460,6 +24460,9 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
+  destructibleLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &2016908146
 MonoBehaviour:
   m_ObjectHideFlags: 0
