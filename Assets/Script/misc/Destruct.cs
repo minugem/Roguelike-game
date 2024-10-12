@@ -5,6 +5,12 @@ using UnityEngine;
 public class Destruct : MonoBehaviour
 {
     public GameObject destoryVFX; //VFX after destoryed
+    private PickupSpawner pickupSpawner; //Reference item drop script
+
+    private void Awake() 
+    {
+        pickupSpawner = GetComponent<PickupSpawner>();
+    }
 
     public void DestoryObject() 
     {
@@ -12,7 +18,10 @@ public class Destruct : MonoBehaviour
 
             Instantiate(destoryVFX,transform.position, transform.rotation);
         }
-    //Destory current obj
-    Destroy(gameObject);
+
+        pickupSpawner.DropItems();//Drop item
+
+        //Destory current obj
+        Destroy(gameObject);
     }
 }
