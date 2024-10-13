@@ -10,7 +10,7 @@ public class DefensePowerUp : PowerUp
         Description = "Increase your defense by " + DefenseIncrease;
     }
 
-    public override void ApplyEffect(Player player)
+    public override void ApplyEffect(Player1 player)
     {
         player.Defense += DefenseIncrease;
     }

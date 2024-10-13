@@ -10,7 +10,7 @@ public class CritChancePowerUp : PowerUp
         Description = "Increase your critical hit chance by " + (CritChanceIncrease * 100) + "%";
     }
 
-    public override void ApplyEffect(Player player)
+    public override void ApplyEffect(Player1 player)
     {
         player.CritChance += CritChanceIncrease;
     }

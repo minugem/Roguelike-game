@@ -10,7 +10,7 @@ public class HealthPowerUp : PowerUp
         Description = "Increase your health by " + HealthIncrease;
     }
 
-    public override void ApplyEffect(Player player)
+    public override void ApplyEffect(Player1 player)
     {
         player.Health += HealthIncrease;
     }

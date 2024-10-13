@@ -7,5 +7,5 @@ public abstract class PowerUp : MonoBehaviour
     public string Name;
     public string Description;
 
-    public abstract void ApplyEffect(Player player);
+    public abstract void ApplyEffect(Player1 player);
 }
