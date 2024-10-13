@@ -1583,7 +1583,7 @@ MonoBehaviour:
   coinIcon: {fileID: 2800000, guid: a2563410a5a4fd14a9fc3a017f2c4068, type: 3}
   equipmentIcon: {fileID: 2800000, guid: 56f7bbd8034392c46ac7fb8958b00796, type: 3}
   keyIcon: {fileID: 2800000, guid: fed33f105b98791499433e8a5696c71c, type: 3}
-  potionIcon: {fileID: 2800000, guid: 4fdd648c5d6864b4eb0e20c9504b69ef, type: 3}
+  potionIcon: {fileID: 2800000, guid: 6debaa0721d79854b889e7c4bdea5d48, type: 3}
 --- !u!95 &1818945304
 Animator:
   serializedVersion: 5
