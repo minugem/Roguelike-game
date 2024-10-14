@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : Character
 {
+    public static Player Instance { get; private set; }
+
     [Header("Melee Attack")]
     public float meleeAttackDamage;
     public Vector2 attackSize = new Vector2(1f, 1f);
@@ -17,6 +19,7 @@ public class Player : Character
 
     private void Awake()
     {
+        Instance = this;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
     public void MeleeAttackAnimEvent(float isAttack)
