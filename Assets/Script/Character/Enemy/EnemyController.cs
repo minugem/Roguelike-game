@@ -111,6 +111,7 @@ public class EnemyController : MonoBehaviour
         rb.velocity = Vector2.zero;
         isDead = true;
         enemyCollider.enabled = false;
+        FindObjectOfType<EnemySpawner>().currentEnemyCount--;
     }
 
     void SetAnimation()
