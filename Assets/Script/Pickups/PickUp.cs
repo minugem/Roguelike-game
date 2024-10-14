@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -7,6 +8,13 @@ public class PickUp : MonoBehaviour
 {
     public AudioClip SFX;
     public GameObject VFX;
+    public static PickUp instance;
+
+
+    public void Awake()
+    {
+        instance = this;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

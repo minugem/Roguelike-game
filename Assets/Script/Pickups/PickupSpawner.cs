@@ -7,8 +7,13 @@ using UnityEngine;
 public class PickupSpawner : MonoBehaviour
 {
     public PropPrefab[] propPrefabs; //Store different item prefab
+    public static PickupSpawner Instance { get; private set; }
 
     //Start generate item
+    public void Awake()
+    {
+        Instance = this;
+    }
     public void DropItems()
     {
         foreach (var propPrefab in propPrefabs)
