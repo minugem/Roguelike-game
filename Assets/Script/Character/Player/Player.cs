@@ -11,7 +11,7 @@ public class Player : Character
     public float offsetY = 1f;
 
     public LayerMask enemyLayer;
-
+    public LayerMask destructibleLayer;
     private Vector2 AttackAreaPos;
     private SpriteRenderer spriteRenderer;
 
@@ -28,12 +28,19 @@ public class Player : Character
         AttackAreaPos.x += offsetX;
         AttackAreaPos.y += offsetY;
 
-        Collider2D[] hitColliders = Physics2D.OverlapBoxAll(AttackAreaPos,attackSize, 0f,enemyLayer);
+        Collider2D[] enemyHitColliders = Physics2D.OverlapBoxAll(AttackAreaPos,attackSize, 0f,enemyLayer);
+        Collider2D[] destructiveHitColliders = Physics2D.OverlapBoxAll(AttackAreaPos, attackSize, 0f, destructibleLayer);
 
-        foreach (Collider2D hitCollider in hitColliders) 
+        //Determine whether it is an enemy
+        foreach (Collider2D hitCollider in enemyHitColliders) 
         {
             hitCollider.GetComponent<Character>().TakeDamage(meleeAttackDamage * isAttack);
             hitCollider.GetComponent<EnemyController>().Knockback(transform.position);
+        }
+        //Determine whether it is an Object
+        foreach (Collider2D hitCollider in destructiveHitColliders)
+        {
+            hitCollider.GetComponent<Destruct>().DestoryObject(); //desturct object
         }
     }
 
