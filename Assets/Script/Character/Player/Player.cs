@@ -14,6 +14,7 @@ public class Player : Character
     public LayerMask destructibleLayer;
     private Vector2 AttackAreaPos;
     private SpriteRenderer spriteRenderer;
+    internal int Experience;
 
     private void Awake()
     {
