@@ -114,7 +114,17 @@ public class Player : Character
     public void IncreaseMaxHealth(int amount)
     {
         maxHealth += amount;
-        // currentHealth += amount; // Optionally increase current health as well
+        UpdateHealthBar(); // Update the health bar to reflect the new max health
+    }
+
+    public void IncreaseHealth(int amount)
+    {
+        if (currentHealth < maxHealth) {
+        currentHealth += amount; 
+        if (currentHealth > maxHealth) {
+            currentHealth = maxHealth;
+        } 
+        }
         UpdateHealthBar(); // Update the health bar to reflect the new max health
     }
 

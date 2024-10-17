@@ -15,7 +15,7 @@ public class PropManager : MonoBehaviour
 
     private int selectedIndex = 0;
     private List<ItemInfo> items = new List<ItemInfo>();
-    private Player player; // Reference to the Player component
+    private Player player; 
 
     private void Start()
     {
@@ -43,7 +43,7 @@ public class PropManager : MonoBehaviour
         }
     }
 
-    private void UseSelectedItem()
+   private void UseSelectedItem()
     {
         if (selectedIndex >= 0 && selectedIndex < items.Count)
         {
@@ -52,6 +52,23 @@ public class PropManager : MonoBehaviour
 
             if (currentCount > 0)
             {
+                // Perform action based on the item type
+                switch (selectedItem.name)
+                {
+                    case "Coin":
+                        UseCoin();
+                        break;
+                    case "Equipment":
+                        UseEquipment();
+                        break;
+                    case "Key":
+                        UseKey();
+                        break;
+                    case "Potion":
+                        UsePotion();
+                        break;
+                }
+
                 // Decrease the count
                 selectedItem.DecreaseCount();
 
@@ -68,6 +85,37 @@ public class PropManager : MonoBehaviour
                     }
                 }
             }
+        }
+    }
+
+    private void UseCoin()
+    {
+        
+    }
+
+    private void UseEquipment()
+    {
+    // Increase player's max health
+        if (player != null)
+        {
+            int maxHealthIncrease = 10; 
+            player.IncreaseMaxHealth(maxHealthIncrease);
+            Debug.Log($"Player's max health increased by {maxHealthIncrease}. New max health: {player.maxHealth}");
+        }
+    }
+
+    private void UseKey()
+    {
+
+    }
+
+    private void UsePotion()
+    {
+        // Increase player's health
+        if (player != null)
+        {
+            int healthIncrease = 10; 
+            player.IncreaseHealth(healthIncrease);
         }
     }
 
@@ -152,13 +200,7 @@ public class PropManager : MonoBehaviour
         if (equipmentCount == 1)
             items.Add(new ItemInfo("Equipment", equipmentIcon, () => equipmentCount, () => equipmentCount--));
 
-        // Increase player's max health
-        if (player != null)
-        {
-            int healthIncrease = 10; // You can adjust this value as needed
-            player.IncreaseMaxHealth(healthIncrease);
-            Debug.Log($"Player's max health increased by {healthIncrease}. New max health: {player.maxHealth}");
-        }
+      
     }
 
     private void PickUpKey()
@@ -173,6 +215,8 @@ public class PropManager : MonoBehaviour
         potionCount++;
         if (potionCount == 1)
             items.Add(new ItemInfo("Potion", potionIcon, () => potionCount, () => potionCount--));
+
+    
     }
 
     private class ItemInfo
