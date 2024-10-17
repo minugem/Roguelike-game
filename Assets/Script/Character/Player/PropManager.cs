@@ -22,7 +22,7 @@ public class PropManager : MonoBehaviour
         float scrollDelta = Input.GetAxis("Mouse ScrollWheel");
         if (scrollDelta != 0 && items.Count > 0)
         {
-            selectedIndex -= Mathf.RoundToInt(scrollDelta * 10); // Adjust sensitivity as needed
+            selectedIndex -= Mathf.RoundToInt(scrollDelta * 10); 
             selectedIndex = Mathf.Clamp(selectedIndex, 0, items.Count - 1);
         }
 
