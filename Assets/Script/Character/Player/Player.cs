@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Player : Character
 {
+    [Header("Health")]
+    public int maxHealth = 100;
+    public int currentHealth;
+    public HealthBar healthBar;
+
     [Header("Melee Attack")]
     public float meleeAttackDamage;
     public Vector2 attackSize = new Vector2(1f, 1f);
@@ -15,6 +20,14 @@ public class Player : Character
     private Vector2 AttackAreaPos;
     private SpriteRenderer spriteRenderer;
 
+    private void Start()
+    {
+        currentHealth = maxHealth;
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(maxHealth);
+        }
+    }
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
