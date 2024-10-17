@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; // Make sure to include the UI namespace
+using UnityEngine.UI; 
 
 public class Player : Character
 {
@@ -109,6 +109,13 @@ public class Player : Character
 
         // Update the health bar when taking damage
         UpdateHealthBar();
+    }
+
+    public void IncreaseMaxHealth(int amount)
+    {
+        maxHealth += amount;
+        // currentHealth += amount; // Optionally increase current health as well
+        UpdateHealthBar(); // Update the health bar to reflect the new max health
     }
 
     //for testing

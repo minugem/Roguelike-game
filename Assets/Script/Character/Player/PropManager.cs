@@ -15,7 +15,17 @@ public class PropManager : MonoBehaviour
 
     private int selectedIndex = 0;
     private List<ItemInfo> items = new List<ItemInfo>();
+    private Player player; // Reference to the Player component
 
+    private void Start()
+    {
+        // Get reference to the Player component
+        player = FindObjectOfType<Player>();
+        if (player == null)
+        {
+            Debug.LogError("Player not found in the scene!");
+        }
+    }
     private void Update()
     {
         // Handle scroll wheel input
@@ -136,11 +146,19 @@ public class PropManager : MonoBehaviour
             items.Add(new ItemInfo("Coin", coinIcon, () => coinCount, () => coinCount--));
     }
 
-    private void PickUpEquipment()
+  private void PickUpEquipment()
     {
         equipmentCount++;
         if (equipmentCount == 1)
             items.Add(new ItemInfo("Equipment", equipmentIcon, () => equipmentCount, () => equipmentCount--));
+
+        // Increase player's max health
+        if (player != null)
+        {
+            int healthIncrease = 10; // You can adjust this value as needed
+            player.IncreaseMaxHealth(healthIncrease);
+            Debug.Log($"Player's max health increased by {healthIncrease}. New max health: {player.maxHealth}");
+        }
     }
 
     private void PickUpKey()
