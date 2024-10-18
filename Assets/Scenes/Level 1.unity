@@ -10399,7 +10399,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.54, y: 7.12, z: -10}
+  m_LocalPosition: {x: -11.234948, y: 7.118886, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14102,7 +14102,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1509813937}
-  - {fileID: 2016908141}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &962894009
@@ -23788,11 +23787,11 @@ Transform:
   m_GameObject: {fileID: 2016908138}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.1450758, y: 3.177524, z: -0.21801591}
+  m_LocalPosition: {x: -12.54, y: 7.12, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 916193136}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2016908142
 BoxCollider2D:
@@ -23933,6 +23932,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  maxHealth: 100
+  currentHealth: 0
   meleeAttackDamage: 10
   attackSize: {x: 0.8, y: 2}
   offsetX: 0.76
@@ -23940,9 +23941,6 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
-  destructibleLayer:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!114 &2016908146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23959,6 +23957,10 @@ MonoBehaviour:
   equipmentCount: 0
   keyCount: 0
   potionCount: 0
+  coinIcon: {fileID: 2800000, guid: a2563410a5a4fd14a9fc3a017f2c4068, type: 3}
+  equipmentIcon: {fileID: 2800000, guid: 56f7bbd8034392c46ac7fb8958b00796, type: 3}
+  keyIcon: {fileID: 2800000, guid: fed33f105b98791499433e8a5696c71c, type: 3}
+  potionIcon: {fileID: 2800000, guid: 4fdd648c5d6864b4eb0e20c9504b69ef, type: 3}
 --- !u!1 &2041662080
 GameObject:
   m_ObjectHideFlags: 0
@@ -24327,4 +24329,5 @@ SceneRoots:
   - {fileID: 20853744}
   - {fileID: 2041662081}
   - {fileID: 522321592}
+  - {fileID: 2016908141}
   - {fileID: 916193136}
