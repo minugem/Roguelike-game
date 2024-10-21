@@ -6,9 +6,9 @@ using UnityEngine.Events;
 public class Character : MonoBehaviour
 {
     [Header("Stats")]
-    [SerializeField] protected float maxHealth;
+    [SerializeField] public float maxHealth;
 
-    [SerializeField] protected float currentHealth;
+    [SerializeField] public float currentHealth;
 
     [Header("invulnerable")]
     public bool invulnerable;
