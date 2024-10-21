@@ -209,7 +209,7 @@ Transform:
   m_GameObject: {fileID: 442002594}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.12345266, y: 0.32405794, z: -10}
+  m_LocalPosition: {x: -0.1290307, y: 0.4308375, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4190,6 +4190,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnMovementInput:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1000766097}
+        m_TargetAssemblyTypeName: EnemyController, Assembly-CSharp
+        m_MethodName: set_MovementInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnAttack:
     m_PersistentCalls:
       m_Calls:
@@ -4208,8 +4223,6 @@ MonoBehaviour:
   player: {fileID: 1720333578}
   chaseDistance: 3
   attackDistance: 0.8
-  patrolRadius: 1
-  patrolSpeed: 2
   meleeAttackDamage: 10
   playerLayer:
     serializedVersion: 2
@@ -6565,7 +6578,6 @@ GameObject:
   - component: {fileID: 1720333573}
   - component: {fileID: 1720333572}
   - component: {fileID: 1720333571}
-  - component: {fileID: 1720333579}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -6619,8 +6631,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  maxHealth: 100
-  currentHealth: 0
   meleeAttackDamage: 10
   attackSize: {x: 0.8, y: 2}
   offsetX: 0.76
@@ -6664,10 +6674,6 @@ MonoBehaviour:
   equipmentCount: 0
   keyCount: 0
   potionCount: 0
-  coinIcon: {fileID: 0}
-  equipmentIcon: {fileID: 0}
-  keyIcon: {fileID: 0}
-  potionIcon: {fileID: 0}
 --- !u!95 &1720333574
 Animator:
   serializedVersion: 5
@@ -6828,20 +6834,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1720333579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720333570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: caa554bc80d9fc74294f3bc0f7459edb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelUpUIManager: {fileID: 0}
-  player: {fileID: 0}
 --- !u!1 &1850147163
 GameObject:
   m_ObjectHideFlags: 0
