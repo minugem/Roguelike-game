@@ -4,7 +4,7 @@ To test the project on your local machine, download the project as a zip file, e
 
 Game Keys:
 
-Attack - J
-Dash - K
+Attack - Left mouse button
+Dash - shift
 Movement - WASD / Arrow Keys
 Esc to pause the game
