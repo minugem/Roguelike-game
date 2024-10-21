@@ -6,9 +6,11 @@ public class Destruct : MonoBehaviour
 {
     public GameObject destoryVFX; //VFX after destoryed
     private PickupSpawner pickupSpawner; //Reference item drop script
+    public static Destruct Instance { get; private set; }
 
     private void Awake() 
     {
+        Instance = this;
         pickupSpawner = GetComponent<PickupSpawner>();
     }
 
