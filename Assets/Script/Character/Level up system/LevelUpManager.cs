@@ -13,9 +13,9 @@ public class LevelUpManager : MonoBehaviour
         powerUps = new List<PowerUp>
         {
             new AttackPowerUp(),
-            new DefensePowerUp(),
+           
             new HealthPowerUp(),
-            new CritChancePowerUp()
+            
         };
     }
 
@@ -26,7 +26,7 @@ public class LevelUpManager : MonoBehaviour
         List<PowerUp> availablePowerUps = new List<PowerUp>();
 
 
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 2; )
         {
             PowerUp randomPowerUp = powerUps[Random.Range(0, powerUps.Count)];
             availablePowerUps.Add(randomPowerUp);

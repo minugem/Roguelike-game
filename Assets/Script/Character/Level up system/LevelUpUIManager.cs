@@ -6,9 +6,9 @@ public class LevelUpUIManager : MonoBehaviour
 {
     public GameObject levelUpPanel; 
     public Button attackButton;     
-    public Button defenseButton;    
+      
     public Button healthButton;     
-    public Button critChanceButton; 
+   
 
     private Player player; 
 
@@ -22,9 +22,9 @@ public class LevelUpUIManager : MonoBehaviour
 
         
         attackButton.onClick.AddListener(() => ApplyAttackPowerUp());
-        defenseButton.onClick.AddListener(() => ApplyDefensePowerUp());
+       
         healthButton.onClick.AddListener(() => ApplyHealthPowerUp());
-        critChanceButton.onClick.AddListener(() => ApplyCritChancePowerUp());
+        
     }
 
     
@@ -47,11 +47,7 @@ public class LevelUpUIManager : MonoBehaviour
     }
 
     
-    private void ApplyDefensePowerUp()
-    {
-        player.IncreaseDefense(3); 
-        HideUI();
-    }
+    
 
     
     private void ApplyHealthPowerUp()
@@ -61,9 +57,5 @@ public class LevelUpUIManager : MonoBehaviour
     }
 
     
-    private void ApplyCritChancePowerUp()
-    {
-        player.IncreaseCritChance(5); 
-        HideUI();
-    }
+    
 }
