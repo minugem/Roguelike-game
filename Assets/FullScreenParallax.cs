@@ -15,7 +15,7 @@ public class FullScreenParallax : MonoBehaviour
         
         // Store the start position X and calculate the visible background width
         startPositionX = transform.position.x;
-        visibleBackgroundWidth = spriteRenderer.bounds.size.x / 2f; // Since the image is twice as wide as needed
+        visibleBackgroundWidth = spriteRenderer.bounds.size.x / 2f; // Since the image is twice as wide as screen
 
         // Create a copy of the background and position it
         backgroundCopy = Instantiate(gameObject, transform.parent);
@@ -37,7 +37,7 @@ public class FullScreenParallax : MonoBehaviour
         // Move the background to the left
         bgTransform.Translate(Vector2.left * scrollSpeed * Time.deltaTime);
 
-        // Check if the background has moved completely off-screen
+        // Check if the background has moved off screen
         if (bgTransform.position.x <= startPositionX - visibleBackgroundWidth)
         {
             // Reset the position
