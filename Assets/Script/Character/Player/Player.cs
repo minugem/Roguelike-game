@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,6 +24,12 @@ public class Player : Character
 
     private Vector2 AttackAreaPos;
     private SpriteRenderer spriteRenderer;
+
+    public float Health { get; internal set; }
+    public float Attack { get; internal set; }
+    public float CritChance { get; internal set; }
+    public float Defense { get; internal set; }
+    public int Experience { get; internal set; }
 
     private void Start()
     {
@@ -133,5 +140,20 @@ public class Player : Character
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(AttackAreaPos, attackSize);
+    }
+
+    internal void IncreaseAttackPower(int v)
+    {
+        throw new NotImplementedException();
+    }
+
+    internal void IncreaseDefense(int v)
+    {
+        throw new NotImplementedException();
+    }
+
+    internal void IncreaseCritChance(int v)
+    {
+        throw new NotImplementedException();
     }
 }
