@@ -8,7 +8,7 @@ public class Menu : MonoBehaviour
     //When The StartNewGame function is called it loads the Main Scene
     public void StartNewGame()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Level 1");
     }
 
     //When The QuitGame function is called it quits the game
@@ -26,6 +26,6 @@ public class Menu : MonoBehaviour
     //When The LoadGame function is called it loads the Main Scene
     public void LoadGame()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Level 1");
     }
 }

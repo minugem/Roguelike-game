@@ -314,6 +314,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3358872712035048586, guid: ba57c70a846d0544ba0c399f30b7153a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3358872712035048586, guid: ba57c70a846d0544ba0c399f30b7153a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 168
+      objectReference: {fileID: 0}
+    - target: {fileID: 8005803748792532902, guid: ba57c70a846d0544ba0c399f30b7153a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8005803748792532902, guid: ba57c70a846d0544ba0c399f30b7153a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 168
+      objectReference: {fileID: 0}
+    - target: {fileID: 8414465888083290011, guid: ba57c70a846d0544ba0c399f30b7153a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8414465888083290011, guid: ba57c70a846d0544ba0c399f30b7153a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 168
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10416,7 +10440,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.745019, y: 7.1193223, z: -10}
+  m_LocalPosition: {x: -11.234948, y: 7.118886, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23570,7 +23594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   propPrefabs:
   - prefab: {fileID: 2074691261}
-    dropPercentage: 40
+    dropPercentage: 100
 --- !u!1 &1940119536
 GameObject:
   m_ObjectHideFlags: 3
@@ -23963,10 +23987,10 @@ MonoBehaviour:
   equipmentCount: 0
   keyCount: 0
   potionCount: 0
-  coinIcon: {fileID: 0}
-  equipmentIcon: {fileID: 0}
-  keyIcon: {fileID: 0}
-  potionIcon: {fileID: 0}
+  coinIcon: {fileID: 2800000, guid: a2563410a5a4fd14a9fc3a017f2c4068, type: 3}
+  equipmentIcon: {fileID: 2800000, guid: 56f7bbd8034392c46ac7fb8958b00796, type: 3}
+  keyIcon: {fileID: 2800000, guid: fed33f105b98791499433e8a5696c71c, type: 3}
+  potionIcon: {fileID: 2800000, guid: 4fdd648c5d6864b4eb0e20c9504b69ef, type: 3}
 --- !u!1 &2041662080
 GameObject:
   m_ObjectHideFlags: 0
@@ -24156,6 +24180,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 916193136}
     m_Modifications:
+    - target: {fileID: 3995560730311097395, guid: 17b1cc11fffaba74a8013d16048f277a, type: 3}
+      propertyPath: propPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995560730311097395, guid: 17b1cc11fffaba74a8013d16048f277a, type: 3}
+      propertyPath: propPrefabs.Array.data[0].prefab
+      value: 
+      objectReference: {fileID: 2074691261}
+    - target: {fileID: 3995560730311097395, guid: 17b1cc11fffaba74a8013d16048f277a, type: 3}
+      propertyPath: propPrefabs.Array.data[0].dropPercentage
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6513695181003878653, guid: 17b1cc11fffaba74a8013d16048f277a, type: 3}
       propertyPath: player
       value: 
